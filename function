@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<input type="text" id="num1">
+<input type="text" >
+<input type="text" >
+<button onclick="find()">do</button>
+<script>
+function find(){
+
+var num1=document.getElementById("num1").value;
+alert(num1);
+
+}
+
+</script>
+</body>
+</html>
