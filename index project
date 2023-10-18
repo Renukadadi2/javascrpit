@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <tittle><center>MINI PROJECT</center></tittle>
+    </head>
+    <body>
+        <h1><center>DROUP DOWN LISIT</center></h1>
+        <Select id=""selection>
+        <option class="option">USA</option>
+        <option class="option">UK</option>
+        <option class="option">AMERICA</option>
+        <option  class="option">INDIA</option>
+        <option class="option">PORLAND</option>
+        <option class="option">PAKISTAN</option>
+        <option  class="option">ENGLAND</option>
+        <option class="option">EUROPE</option>
+        <option class="option">INDONESIA</option>
+        <option ></option>
+        </Select>
+        <input type="text" id="num1" placeholder="enter text">
+        <button onclick="myfunction()">CLICK</button>
+<script>
+    function myfunction(){
+        console.log("function executed");
+        var num1=document.getElementById("num1").value;
+        var select=[];
+         select=document.getElementsByClassName("option");
+         console.log(select);
+        for(var i=0;i<select.length;i++){
+            var compare=select[i].innerHTML;
+            select[i]==compare[1];
+            if(compare.substring(0,select.length)==num1){
+                console.log("executed");
+            }else{
+                select[i].innerHTML="";
+            }
+        }
+
+    }
+</script>
+    
+    </body>
+</html>
